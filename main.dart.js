@@ -56262,7 +56262,7 @@ o=J.b1h(B.b.gP(c))
 p.u3(p,new A.ayn())
 n=t.z
 s=3
-return A.S(q.a.yq(0,"https://ffr.33cyber.net/trackData/"+b+"/"+o,null,p,null,null,A.aML("PATCH",A.Uf(A.aj(["Token",q.b],t.N,n))),null,n).hj(new A.ayo()),$async$yN)
+return A.S(q.a.yq(0,"https://33cyber.net/trackData/"+b+"/"+o,null,p,null,null,A.aML("PATCH",A.Uf(A.aj(["Token",q.b],t.N,n))),null,n).hj(new A.ayo()),$async$yN)
 case 3:return A.L(null,r)}})
 return A.M($async$yN,r)},
 uH(a,b,c){return this.a4R(a,b,c)},
@@ -56274,7 +56274,7 @@ case 3:o=B.b.gP(b).b3()
 o.u3(o,new A.ayi())
 n=t.z
 s=4
-return A.S(p.a.aAG("https://ffr.33cyber.net/trackData/"+c,o,A.Uf(A.aj(["Token",p.b],t.N,n)),n).hj(new A.ayj()),$async$uH)
+return A.S(p.a.aAG("https://33cyber.net/trackData/"+c,o,A.Uf(A.aj(["Token",p.b],t.N,n)),n).hj(new A.ayj()),$async$uH)
 case 4:m=e
 n=m.c
 if(n!==200&&n!==201&&n!==202)throw A.c(A.c5(null))
@@ -56337,7 +56337,7 @@ a9=new A.Pp(new A.aY(new A.ak($.ad,t.Ic),t.L4))
 A.ct(B.om,new A.ayg(a9))
 a1=t.z
 s=3
-return A.S(p.a.a2m("https://ffr.33cyber.net/login",a9,a7,a1).hj(new A.ayh()),$async$xM)
+return A.S(p.a.a2m("https://33cyber.net/login",a9,a7,a1).hj(new A.ayh()),$async$xM)
 case 3:o=b5
 case 4:switch(o.c){case 200:s=6
 break
@@ -56418,7 +56418,7 @@ j=new A.Pp(new A.aY(new A.ak($.ad,t.Ic),t.L4))
 A.ct(B.om,new A.ayk(j))
 i=p.a
 s=3
-return A.S(i.a2m("https://ffr.33cyber.net/signup",j,k,m).hj(new A.ayl()),$async$qO)
+return A.S(i.a2m("https://33cyber.net/signup",j,k,m).hj(new A.ayl()),$async$qO)
 case 3:h=a4
 s=4
 return A.S(p.uG(a2,a,b),$async$qO)
@@ -56430,7 +56430,7 @@ p.b=o
 s=a1!==""?5:6
 break
 case 5:s=7
-return A.S(i.aAF("https://ffr.33cyber.net/addParticipant/"+a+"/"+a1,j,A.Uf(A.aj(["Token",o],l,m)),m).hj(new A.aym()),$async$qO)
+return A.S(i.aAF("https://33cyber.net/addParticipant/"+a+"/"+a1,j,A.Uf(A.aj(["Token",o],l,m)),m).hj(new A.aym()),$async$qO)
 case 7:case 6:q=f
 s=1
 break
@@ -56441,7 +56441,7 @@ auw(a){var s=0,r=A.N(t.H),q=this,p
 var $async$CU=A.O(function(b,c){if(b===1)return A.K(c,r)
 while(true)switch(s){case 0:p=t.z
 s=2
-return A.S(q.a.aBp(0,"https://ffr.33cyber.net/users/"+a,null,null,A.aML("DELETE",A.Uf(A.aj(["Token",q.b],t.N,p))),null,p).hj(new A.aye()),$async$CU)
+return A.S(q.a.aBp(0,"https://33cyber.net/users/"+a,null,null,A.aML("DELETE",A.Uf(A.aj(["Token",q.b],t.N,p))),null,p).hj(new A.aye()),$async$CU)
 case 2:p=c.c
 A.kg().$1(J.cH(p))
 if(p!==204){A.kg().$1("error deleting account")
