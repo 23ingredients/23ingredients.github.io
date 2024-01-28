@@ -3,6 +3,8 @@ $(document).ready(function() {
     var urlParams = new URLSearchParams(window.location.search);
     var userKey = urlParams.get('userKey');
     var email = urlParams.get('email');
+
+    $('#email_text').text('Reset password for ' + email);
   
     $("#resetForm").submit(function(event) {
       event.preventDefault(); // Prevent default form submission
@@ -14,17 +16,22 @@ $(document).ready(function() {
       if (newPassword !== repeatPassword) {
         alert("Passwords do not match.");
         return;
+      } else if (newPassword.length < 8) {
+        alert("Your new password needs to be at least 8 character long.");
+        return;
       }
   
       // Send AJAX request using jQuery
       $.ajax({
-        url: "https://example.com/reset",
-        type: "POST",
-        data: {
-          newPassword: newPassword,
-          userKey: userKey,
-          email: email // Include email in the data object
-        },
+        url: "https://33cyber.net/reset-password/finish",
+        type: "PUT",
+        contentType: "application/json",
+        data:
+        JSON.stringify({
+          "resetKey": userKey,
+          "password": newPassword,
+          "confirmPassword": repeatPassword
+        }),
         success: function(response) {
           // Handle successful response
           console.log(response);
