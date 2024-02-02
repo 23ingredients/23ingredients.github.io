@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Extract userKey and email from URL parameters
     var urlParams = new URLSearchParams(window.location.search);
-    var userKey = urlParams.get('userKey');
+    var userKey = urlParams.get('resetKey');
     var email = urlParams.get('email');
 
     $('#email_text').text('Reset password for ' + email);
