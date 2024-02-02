@@ -1,8 +1,10 @@
 $(document).ready(function() {
     // Extract userKey and email from URL parameters
     var urlParams = new URLSearchParams(window.location.search);
-    var userKey = urlParams.get('resetKey');
+    var resetKey = urlParams.get('resetKey');
     var email = urlParams.get('email');
+
+    console.log(resetKey)
 
     $('#email_text').text('Reset password for ' + email);
   
@@ -28,7 +30,7 @@ $(document).ready(function() {
         contentType: "application/json",
         data:
         JSON.stringify({
-          "resetKey": userKey,
+          "resetKey": resetKey,
           "password": newPassword,
           "confirmPassword": repeatPassword
         }),
