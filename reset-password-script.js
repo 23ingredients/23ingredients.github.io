@@ -25,7 +25,7 @@ $(document).ready(function() {
   
       // Send AJAX request using jQuery
       $.ajax({
-        url: "https://33cyber.net/reset-password/finish",
+        url: "https://23IngredientsRx.com/reset-password/finish",
         type: "PUT",
         contentType: "application/json",
         data:
